@@ -1,0 +1,40 @@
+.btn {
+  background-color: $mainColor;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.75rem 1.2rem;
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover {
+    background-color: transparent;
+    color: $mainColor;
+    transition: background-color 0.5s ease;
+    border-color: $mainColor;
+  }
+
+  &--outline {
+    border-color: $mainColor;
+    background-color: transparent !important;
+    color: $mainColor;
+  }
+
+  &--orange {
+    background-color: $mainOrange;
+  }
+
+  &--large {
+    padding: 1.1rem 1.9rem;
+
+    @mixins atSmall {
+      font-size: 1.25rem;
+    }
+  }
+
+  &--outline:hover {
+    background-color: $mainColor !important;
+    color: #fff;
+    transition: background-color 0.5s ease;
+  }
+}
+

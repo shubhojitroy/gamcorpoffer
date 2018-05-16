@@ -1,0 +1,46 @@
+.nav {
+  background-color: rgba(255, 255, 255, .9995);
+  box-shadow: $boxShadow;
+  min-height: 4rem;
+  padding: .25em 0;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  margin-top: 0;
+  width: 100%;
+  border-top: $borderTop;
+}
+
+.primary-nav {
+  display: flex;
+  justify-content: space-between;
+
+
+  a {
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-flex;
+    padding: 0.75rem 0;
+
+    :hover {
+      border-color: #0096d7;
+    }
+  }
+
+}
+
+// @media (min-width: 768px) {
+//   .primary-nav {
+//     margin-left: 70%;
+//     text-align: right;
+//   }
+// }
+
+// @media (max-width: 640px) {
+//   .primary-nav {
+//     margin-left: 0;
+//     text-align: left;
+//   }
+// }
+
+

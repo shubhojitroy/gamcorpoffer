@@ -1,0 +1,24 @@
+<go-header></go-header>
+
+<main role="main" class="container">
+  <div class="card" >
+    <div class="card-body">
+      <h1 class="card-title">{{ pageTitle }}</h1>
+      <div class="flex-youtube-wrapper">
+        <div class="h_iframe">
+          <!-- a transparent image is preferable -->
+          <img class="ratio" src="http://placehold.it/16x9"/>
+          <iframe src="https://www.youtube.com/embed/EOCJxjcEd34" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="clearfix">&nbsp;</div>
+      <div class="float-container alert">
+        <button type="submit" class="btn" (click)="onBack()">
+          Back <i class="fas fa-arrow-circle-left"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<go-footer></go-footer>

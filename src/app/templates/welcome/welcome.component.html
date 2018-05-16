@@ -1,0 +1,29 @@
+<go-header></go-header>
+<div class="large-hero">
+  <img class="large-hero__image" src="{{ imageSrc }}" border="0" alt="" />
+</div>
+
+<main role="main" class="container">
+  <div class="card" >
+    <div class="card-body">
+      <h1 class="card-title">{{ pageTitle }}</h1>
+      <p>
+        Organization is preparing to lodge a prospectus with the Australian Securities and Investments Commission (ASIC) in relation to an initial public offering of its shares (Offer or Offer).<br><br>
+
+        Further details of the Offer will be provided in the  Offer prospectus (Prospectus), which is expected to be available in month of year, subject to market conditions. Offer is then expected to list on the Australian Securities Exchange (ASX) in Month of year YEAR.<br><br>
+
+        Organization is the parent company of a group of wholly-owned subsidiaries (and divisions) that operate under the banner of Group. Click&nbsp;<a href="#" class="card-link">here</a> for more details.<br><br>
+
+        If you are an Australian resident you are now invited to pre-register for the Share Offer. Pre-registering for a Prospectus does not commit you to buying shares - it simply lets us know that you are interested in reading the Prospectus when it becomes available. If you pre-register you can be allocated more shares than if you don't pre-register (<em>if you decide to apply for shares when the Offer opens</em>).
+      </p>
+      <div class="float-container">
+        <button type="submit" class="btn" (click)="onSubmit()" [routerLink]="['/preregistration']">
+          Pre register <i class="fas fa-registered"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<go-footer></go-footer>

@@ -1,0 +1,14 @@
+a, a:hover {
+  color: $mainColor;
+  background-color: #fff;
+  border-color: $mainColor;
+  transition: background-color 0.5s ease;
+
+}
+.hyper-link {
+  color: #0000EE;
+
+  &:visited {
+    color: #551A8B;
+  }
+}

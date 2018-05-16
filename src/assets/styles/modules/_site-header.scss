@@ -1,0 +1,25 @@
+.site-header {
+  padding: 0.625rem 0;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+
+  @mixin atMedium {
+    background-color: rgba($mainColor, 0.3);
+  }
+
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(.8);
+    transform-origin: 50% 0;
+    background-color: $mainColor;
+    padding: 1.5625rem 2.25rem;
+
+    @mixin atMedium {
+      left: auto;
+      transform: translateX(0);
+    }
+  }
+}

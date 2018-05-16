@@ -1,0 +1,18 @@
+<header class="site-header">
+  <nav class="nav">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row align-items-center">
+        <!--p-3 px-md-4 mb-3-->
+        <div class="site-header__logo navbar-brand">
+          <a class="navbar-brand" [routerLink]="['/welcome']" title="{{ hrefTitle }}">
+            <img src="{{ imageSrc }}" alt="{{ hrefTitle }}" [style.width.px]='64' />
+          </a>
+        </div>
+        <nav class="my-2 my-md-0 mr-md-3 primary-nav">
+          <a class="p-2" [routerLink]="['/faqs']">FAQs</a>
+          <a class="p-2" [routerLink]="['/media']">Media</a>
+        </nav>
+      </div>
+    </div>
+  </nav>
+</header>

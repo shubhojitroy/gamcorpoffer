@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/styles/base/variables';
+@import './assets/styles/base/mixins';
+@import './assets/styles/base/global';
+@import './assets/styles/modules/load';
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import './assets/styles/modules/sticky-header-footer';
+@import './assets/styles/modules/nav';
+@import './assets/styles/modules/large-hero';
+@import './assets/styles/modules/card';
+@import './assets/styles/modules/flex-youtube';
+@import './assets/styles/modules/heading';
+@import './assets/styles/modules/table';
+@import './assets/styles/modules/btn';
+@import './assets/styles/modules/link';
+@import './assets/styles/modules/alert';
+@import './assets/styles/modules/footer';

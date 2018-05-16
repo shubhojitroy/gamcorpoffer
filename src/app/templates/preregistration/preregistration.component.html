@@ -1,0 +1,36 @@
+<go-header></go-header>
+
+<main role="main" class="container">
+  <div class="card" >
+    <div class="card-body">
+      <h1 class="card-title">{{ pageTitle }}</h1>
+      <div>
+      </div>
+      <form [formGroup]="countryform" novalidate (ngSubmit)="onSubmit()">
+        <div class="form-group"
+          [ngClass]="{
+            'has-success': country.valid && (country.dirty || country.touched),
+            'has-danger': country.invalid && (country.dirty || country.touched)}">
+          <label for="country">
+            <h5 class="card-title">{{ cardLabel }}</h5>
+          </label>
+          <select class="form-control" id="" aria-describedby="textHelp" placeholder="Select Country" formControlName="country">
+            <option value="">Please select country</option>
+            <option *ngFor="let country of countries" [value]="country">{{ country }}</option>
+          </select>
+          <div class="form-control-feedback" *ngIf="country.errors && (country.dirty || country.touched)">
+            <p *ngIf="country.errors.required">Country is required</p>
+          </div>
+          <div class="clearfix">&nbsp;</div>
+        </div>
+        <button type="submit" class="btn" ><!--[routerLink]="['/confirmation']"-->
+          Submit <i class="fas fa-share-square"></i>
+        </button>
+      </form>
+      
+
+    </div>
+  </div>
+</main>
+
+<go-footer></go-footer>
